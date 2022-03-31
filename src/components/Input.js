@@ -9,6 +9,7 @@ const Input = ({ title, handlePhoneChange, value }) => {
         value={value}
         onChangeText={handlePhoneChange}
         style={{ borderBottomColor: "grey", borderBottomWidth: 1, flex: 1 }}
+        keyboardType="numeric"
       />
     </View>
   );
