@@ -28,7 +28,7 @@ const SignupForm = () => {
   };
   const handleSignIn = async (phone, code) => {
     try {
-      const response = await axios.post(`${ROOT_URL}/verifyOneTimePassword`, {
+      let response = await axios.post(`${ROOT_URL}/verifyOneTimePassword`, {
         phone: phoneVerify,
         code: codeNumber,
       });
